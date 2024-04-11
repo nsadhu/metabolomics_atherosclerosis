@@ -1,0 +1,44 @@
+# specifying the method, input filename, column names for METAL analysis
+# date created: 14/04/2021
+# METAL definition file
+
+SCHEME SAMPLESIZE              # other option in meta analysis by "N"    
+
+GENOMICCONTROL ON          # set ON or OFF depending on your context
+
+AVERAGEFREQ ON		   # options to track the effect allele frequency across all files 
+MINMAXFREQ ON
+
+# cohort 1 
+
+MARKER SNP
+EFFECT b
+STDERR se
+PVALUE p
+ALLELE A1 A2
+FREQ Freq
+WEIGHT N
+
+PROCESS file1.txt      # replace with filename
+
+# cohort 2
+
+MARKER SNP
+EFFECT b
+STDERR se
+PVALUE p
+ALLELE A1 A2
+FREQ Freq
+WEIGHT n
+
+PROCESS file2.txt       # replace with filename
+
+
+OUTFILE METAL_OUTPUT_samplesize .txt       
+
+ANALYZE HETEROGENEITY    # use "ANALYZE" , delete "HETEROGENEITY" if you dont want to study HETEROGENEITY
+
+QUIT
+
+
+
