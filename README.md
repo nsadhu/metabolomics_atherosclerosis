@@ -1,5 +1,5 @@
 # metabolomics_atherosclerosis
-This repository contains R and bash scripts used in "Metabolome-wide association of carotid intima media thickness in an Asian population cohort identifies FDX1 as a determinant of cholesterol metabolism and cardiovascular risk."
+This repository contains R and bash scripts used in "Metabolome-wide association identifies ferredoxin-1 (FDX1) as a determinant of cholesterol metabolism and cardiovascular risk in Asian populations."
 1. 01_glm_logmeancIMT_Model1.R 
 2. 02_glm_logmeancIMT_Model2.R 
 3. 03_gsmr.sh
